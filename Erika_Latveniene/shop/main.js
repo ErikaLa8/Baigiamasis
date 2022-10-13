@@ -6,7 +6,7 @@ const adClicked = (event) => {
     } else {
         localStorage.setItem("productID", event.path[1].id);
     }
-location.href = "./viewItem/viewItem.html"
+location.href = "../viewItem/viewItem.html"
 } 
 
 fetch('https://63471c8b04a6d45757a0babd.mockapi.io/Shop/shop')
@@ -40,5 +40,5 @@ data.forEach( el => {
 }
 
 const addItem = () => {
-location.href = "./addItem/addItem.html"
+location.href = "../addItem/addItem.html"
 }

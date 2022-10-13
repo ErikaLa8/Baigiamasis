@@ -1,5 +1,5 @@
 const backButton = document.querySelector('#goBack');
-backButton.addEventListener('click', () => {location.href = "../index.html"})
+backButton.addEventListener('click', () => {location.href = "../shop/index.html"})
 
 const addItem = () => {
     let name = document.querySelector('#name').value;

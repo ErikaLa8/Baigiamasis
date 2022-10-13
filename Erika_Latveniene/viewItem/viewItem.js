@@ -1,8 +1,8 @@
 const backButton = document.querySelector('#goBack');
-backButton.addEventListener('click', () => {location.href = "../index.html"})
+backButton.addEventListener('click', () => {location.href = "../shop/index.html"})
 
 const main = document.querySelector('main');
-const itemID = sessionStorage.getItem('productID');
+const itemID = localStorage.getItem('productID');
 
 const updateUI = (data) => {
 
@@ -31,7 +31,7 @@ fetch(`https://63471c8b04a6d45757a0babd.mockapi.io/Shop/shop?id=${itemID}`)
 const removeFn = () => {
     setTimeout(() => {
         alert("Item has been deleted.");
-        location.href = "../index.html";
+        location.href = "../shop/index.html";
     }, 2000);
 
     fetch(`https://63471c8b04a6d45757a0babd.mockapi.io/Shop/shop/${itemID}`, {method: 'DELETE'})
